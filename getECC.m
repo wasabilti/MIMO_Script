@@ -1,6 +1,7 @@
-%function ECC=getECC(FILENAME)
+function ECC=getECC(FILENAME)
 
 % Get ECC from Sparameter data file
+% Filename incoude postfix
 % 1 row: comment
 % 1 column: frequency
 % 2 column: S11 real
@@ -13,7 +14,7 @@
 % 9 column: S22 imag
 
 % Debug part
-FILENAME = 'S.csv';
+%  FILENAME = 'S.csv';
 % end of debug part
 
 PLOT_RESULT  = 1;	% Control fig output
@@ -39,4 +40,4 @@ if PLOT_RESULT
 	hold off
 end % end of if PLOT_RESULT
 
-%end % end of function
+end % end of function
